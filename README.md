@@ -54,7 +54,7 @@ class JobName {
 ?>
 ```
 
-Save this to your app's `lib/` folder, e..g, `apps/myapp/lib/JobName.php`.
+Save this to your app's `lib/` folder, e.g., `apps/myapp/lib/JobName.php`.
 
 ## Running the workers
 
