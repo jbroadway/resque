@@ -28,7 +28,7 @@ $this->run ('resque/init');
 
 After initializing the app, you can call `Resque::enqueue()` anywhere after that.
 
-```
+```php
 <?php
 
 // Enqueue a job after calling resque/init
