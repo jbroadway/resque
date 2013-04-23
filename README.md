@@ -37,6 +37,25 @@ Resque::enqueue ('queue_name', 'JobName', array ('arg1' => 'value'));
 ?>
 ```
 
+## Defining jobs
+
+Defining a job in Resque is done by creating a class named after the job name
+with a `perform()` method that will be called on to perform the job:
+
+```php
+<?php
+
+class JobName {
+	public function perform () {
+		printf ("Test job, received: %s\n", $this->args['arg1']);
+	}
+}
+
+?>
+```
+
+Save this to your app's `lib/` folder, e..g, `apps/myapp/lib/JobName.php`.
+
 ## Running the workers
 
 To start running the workers, use the following command:
