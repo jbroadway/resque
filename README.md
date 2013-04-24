@@ -63,3 +63,13 @@ To start running the workers, use the following command:
 ```bash
 $ ./elefant resque/run
 ```
+
+You can also override most of the settings by passing parameters to the command,
+including:
+
+* `--help` Display help output
+* `--logging=(off|normal|verbose)` Set the logging level
+* `--pid-file=./resque.pid` Set the PID file
+* `--queue=queue_name` Specify the queue to watch
+* `--sleep-interval=5` Seconds to sleep for
+* `--workers=5` Number of workers to spawn
