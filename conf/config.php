@@ -21,7 +21,7 @@ workers = 1
 
 ; A prefix for the Redis keys used by the Resque app.
 
-prefix = "elefant:resque:"
+prefix = "resque:"
 
 ; Logging output level (Off, normal, or verbose).
 
